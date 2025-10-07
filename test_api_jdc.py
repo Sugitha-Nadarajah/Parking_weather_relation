@@ -18,9 +18,9 @@ def get_bike_data():
     except requests.exceptions.RequestException as e:
         print("❌ Erreur :", e)
 
-# Boucle de test : récupère les données toutes les 30 secondes
+# Boucle de test : récupère les données toutes les 30 min
 if __name__ == "__main__":
     while True:
         print("\n--- Récupération des données JCDecaux ---")
         get_bike_data()
-        time.sleep(30)
+        time.sleep(1800)
