@@ -7,7 +7,6 @@ import json
 LATITUDE = 48.8566
 LONGITUDE = 2.3522
 
-# URL de l'API Open-Meteo
 URL = (
     f"https://api.open-meteo.com/v1/forecast?"
     f"latitude={LATITUDE}&longitude={LONGITUDE}&current_weather=true"

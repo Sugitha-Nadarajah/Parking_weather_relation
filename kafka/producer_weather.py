@@ -14,3 +14,10 @@ while True:
     producer.send("weather_paris", weather)
     print("✅ Message envoyé :", weather)
     time.sleep(1800)
+    
+    
+    """ Producer role:
+    - calls the Open-Meteo API
+    - retrieves the weather (temperature, wind, etc.)
+    - sends this data to a Kafka topic named, for example, weather_paris
+    """

@@ -12,3 +12,7 @@ print("📡 En attente de messages météo...")
 
 for message in consumer:
     print("🌦️ Reçu :", message.value)
+
+    """Consumer role: 
+    - read messages in a Kafka topic
+    """
